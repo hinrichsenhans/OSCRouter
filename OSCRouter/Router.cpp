@@ -18,11 +18,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#include "Router.h"
-#include "EosTimer.h"
-#include "EosUdp.h"
-#include "EosTcp.h"
-
 #ifdef WIN32
 	#include <WinSock2.h>
 #else
@@ -31,6 +26,13 @@
 	#include <netinet/in.h>
 	#include <arpa/inet.h>
 #endif
+
+#include "Router.h"
+#include "EosTimer.h"
+#include "EosUdp.h"
+#include "EosTcp.h"
+
+
 
 // must be last include
 #include "LeakWatcher.h"
