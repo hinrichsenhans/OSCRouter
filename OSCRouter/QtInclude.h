@@ -44,13 +44,18 @@
 #include <QtCore/QDir>
 #include <QtCore/QTextStream>
 #include <QtCore/QUrl>
+#include <QtCore/QStandardPaths>
+
+#include <QtGui/QDesktopServices>
+#include <QtGui/QCloseEvent>
+#include <QtGui/QPainter>
 
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QWidget>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QPushButton>
-//#include <QtWidgets/QPlastiqueStyle>
+#include <QtWidgets/QStyleFactory>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QSpinBox>
@@ -60,16 +65,16 @@
 #include <QtWidgets/QProgressBar>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QSpacerItem>
-#include <QtGui/QDesktopServices>
 #include <QtWidgets/QFileDialog>
 #include <QtWidgets/QMessageBox>
-#include <QtGui/QCloseEvent>
 #include <QtWidgets/QComboBox>
-#include <QtGui/QPainter>
 
 #include <QtNetwork/QNetworkInterface>
 
-#include <QtWinExtras\QtWin>
+#ifdef WIN32
+	#include <Winsock2.h>
+	#include <QtWinExtras/QtWin>
+#endif
 
 ////////////////////////////////////////////////////////////////////////////////
 
